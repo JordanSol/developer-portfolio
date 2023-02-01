@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 
 const Skills = () => {
+
     return (
-        <section className='w-full bg-[rgb(8,6,10)] py-20 px-4 flex flex-col justify-center items-center h-full min-h-screen'>
+        <section className={`motion-safe:animate-fadeIn w-full  py-20 px-4 flex flex-col justify-center items-center h-full main-content js-show-on-scroll`}>
             <h2 className='text-5xl sm:text-7xl md:text-[4rem] lg:text-[5rem] leading-[50px] md:leading-[60px] lg:leading-[80px]'>
                 My {" "}
                 <span className='text-yellow-300 '>
@@ -32,7 +33,7 @@ const Skills = () => {
                             </span>
                         </div>
                         <p>
-                            Experienced in OOP in a multitude of industry-standard languages including TypeScript, JavaScript, and Python. 
+                            Experienced in OOP in a multitude of industry-standard languages including TypeScript, JavaScript, and Python. Developing Full-Stack applications.
                         </p>
                     </div>
                 </div>
@@ -86,7 +87,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className='z-0 -mt-60 blur-[2px] opacity-10'>
+            <div className='z-0 -mt-60 blur-[1px] opacity-20'>
                 <Image src="/code-sample.png" width={599} height={462} alt="Silly Background"/>
             </div>
         </section>

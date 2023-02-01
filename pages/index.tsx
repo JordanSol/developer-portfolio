@@ -6,9 +6,10 @@ import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Skills from '../components/Skills'
 import Work from "../components/Work"
-import Macbook from '../components/Macbook'
+import About from '../components/About'
 
 const Home: NextPage = () => {
+
   return (
     <div className="w-full min-h-screen text-barlow">
       <Head>
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <main className=''>
         <Nav/>
         <Hero/>
+        <About/>
         <Skills/>
         <Work/>
       </main>

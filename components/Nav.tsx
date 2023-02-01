@@ -47,7 +47,7 @@ const Nav = () => {
                     </li>
                     <li className='hover:text-yellow-300/80'>
                         <Link href="/">
-                            {"//  EXPERIENCE"}
+                            {"//  PROJECTS"}
                         </Link>
                     </li>
                 </ul>

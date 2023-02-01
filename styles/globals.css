@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background: rgb(15, 13, 21);
+  background: rgb(31, 25, 37);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: 'Barlow Condensed', sans-serif;
@@ -29,6 +29,12 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: acier-bat-solid;
+}
+
+@layer base {
+  .main-content {
+    @apply max-w-[1280px] mx-auto !px-10;
+  }
 }
 
 .main-heading {
@@ -116,9 +122,47 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+
+.subHeading {
+  font-family: "Barlow Condensed";
+  line-height: 1;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: rgb(210, 224, 253)
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.dots-background {
+  position: relative;
+}
+
+.dots-background::before {
+  content: url('/dots.svg');
+  position: absolute;
+  transform: translate(-25px, -25px);
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+
+.dots-background-right {
+  position: relative;
+}
+
+.dots-background-right::before {
+  content: url('/dots.svg');
+  position: absolute;
+  transform: translate(50px, -25px);
+  width: 100%;
+  height: 100%;
+  opacity: 65%;
+}
+
 .scroll-down {
-  border: 2px solid #fde473;
-  opacity: 75%;
+  border: 2px solid #FCD42E;
   border-radius: 20px;
   bottom: 60px;
   height: 50px;
@@ -128,10 +172,10 @@ h1,h2,h3,h4,h5,h6 {
   right: 0;
   width: 30px;
 }
+
 .scroll-down::before {
   animation: scrollDownAnimation 2s infinite;
-  background-color: #fde473;
-  opacity: 75%;
+  background-color: #FCD42E;
   border-radius: 100%;
   content: '';
   height: 6px;
@@ -142,66 +186,23 @@ h1,h2,h3,h4,h5,h6 {
   top: 10px;
   width: 6px;
 }
-@-moz-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes scrollDownAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-    transform: translate(0, 20px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 @keyframes scrollDownAnimation {
+
   0% {
     opacity: 0;
     transform: translate(0, 0);
   }
+
   40% {
     opacity: 1;
   }
+  
   80% {
     opacity: 0;
     transform: translate(0, 20px);
   }
+
   100% {
     opacity: 0;
   }

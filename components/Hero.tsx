@@ -8,12 +8,12 @@ import Link from 'next/link'
 
 export default function Hero () {
     return (
-        <section id="hero" className='w-full h-screen relative  flex flex-col bg-gradient-to-b from-[rgb(16,12,21)] to-[rgb(8,6,10)]'>
+        <section id="hero" className='w-full h-screen relative  flex flex-col bg-gradient-to-b from-slate-900 to-[rgb(31, 25, 37)]'>
             <div className='relative h-full bg-[url("/glow.png")] bg-center bg-cover'>
                 <div className='absolute w-full h-full flex flex-col justify-center items-center'>                         
                         <h1 className='font-bold text-6xl sm:text-7xl md:text-[5rem] lg:text-[7rem] leading-[50px] md:leading-[60px] lg:leading-[80px] z-50 text-center font-acier text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-400 main-heading'>
                             JORDAN<br className='md:hidden'/> FREEMAN
-                        </h1>\        
+                        </h1>        
                     <h2 className='z-50 font-acier text-yellow-300 text-lg md:text-3xl'>
                         {"//"}Fullstack Web Developer
                     </h2>
