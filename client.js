@@ -1,7 +1,9 @@
 import { SanityClient } from "@sanity/client";
 
-export default SanityClient({
+const client = new SanityClient({
     projectId: '888megxu',
     dataset: 'production',
     useCdn: true
 });
+
+export default client
