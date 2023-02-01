@@ -45,19 +45,19 @@ const About:FC = () => {
                     <div className='grid grid-cols-3 gap-2'>
                         <div className='cursor-pointer text-center border border-white/20 p-2 text-white rounded-sm hover:bg-yellow-300/10 hover:-translate-y-1 transition-all'>
                             <BsCodeSlash className='text-4xl text-center w-full'/>
-                            <span className='text-lg'>Skills</span>
+                            <span className='md:text-lg'>Skills</span>
                         </div>
                         <div className='cursor-pointer text-center border border-white/20 p-2 text-white rounded-sm hover:bg-yellow-300/10 hover:-translate-y-1 transition-all'>
                             <MdOutlineWorkOutline className='text-4xl text-center w-full'/>
-                            <span className='text-lg'>My Work</span>
+                            <span className='md:text-lg'>My Work</span>
                         </div>
                         <div className='cursor-pointer text-center border border-white/20 p-2 text-white rounded-sm hover:bg-yellow-300/10 hover:-translate-y-1 transition-all'>
                             <BsTools className='text-4xl text-center w-full'/>
-                            <span className='text-lg'>Projects</span>
+                            <span className='md:text-lg'>Projects</span>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='flex items-center'>
                     <div className='aspect-square w-full sm:w-64 md:w-96 relative rounded-md' onMouseEnter={() => setImageHovered(true)} onMouseLeave={() => setImageHovered(false)}>
                         <div className={`absolute ${imageHovered ? "-bottom-3 -right-3 sm:-bottom-10 sm:-right-10" : "-bottom-2 -right-2 sm:-bottom-8 sm:-right-8"} border-4 rounded-md border-yellow-300 w-full h-full transition-all`}/>
                         <figure className='w-full aspect-square overflow-hidden rounded-md relative'>
