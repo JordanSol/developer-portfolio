@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: [
-    'cdn.sanity.io'
+    'cdn.sanity.io',
+    'i.imgur.com'
     ]
   }
 }

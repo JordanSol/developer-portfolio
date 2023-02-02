@@ -5,39 +5,14 @@ import {MdOutlineWorkOutline} from 'react-icons/md'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 
+import Loader from './Loader';
+
 const About:FC = () => {
     const [imageHovered, setImageHovered] = useState(false);
     const [showContent, setShowContent] = useState(false);
     const containerRef = useRef<HTMLDivElement | null>(null);
     const isInView= useInView(containerRef, {margin: "-100px "})
-    useEffect(() => {
-        console.log("in view" +isInView)
-    },[isInView])
 
-    // const callbackFunction = (entries: any[]) => {
-    //     const [entry] = entries;
-    //     if (entry.isIntersecting) {
-    //         setShowContent(true)
-    //     } else {
-    //         setShowContent(false)
-    //     }
-    //     console.log(entry)
-    // }
-    // useEffect(() => {
-    //     if (!containerRef.current) return
-    //     const options = {
-    //         root: null,
-    //         rootMargin: "0px",
-    //         threshold: 1.0
-    //     };
-    //     const observer = new IntersectionObserver(callbackFunction, options);
-    //     console.log(showContent)
-    //     if (containerRef.current) observer.observe(containerRef.current)
-    //     return () => {
-    //         if (containerRef.current) observer.unobserve(containerRef.current)
-    //     }
-
-    // }, [containerRef])
     return (
         <div className="w-full h-min min-h-screen relative flex flex-col justify-center py-20 px-4 main-content" ref={containerRef}>
             <AnimatePresence>
@@ -151,7 +126,7 @@ const About:FC = () => {
                             <div className='aspect-square w-full sm:w-64 md:w-96 relative rounded-md' onMouseEnter={() => setImageHovered(true)} onMouseLeave={() => setImageHovered(false)}>
                                 <div className={`absolute ${imageHovered ? "-bottom-3 -right-3 sm:-bottom-10 sm:-right-10" : "-bottom-2 -right-2 sm:-bottom-8 sm:-right-8"} border-4 rounded-md border-yellow-300 w-full h-full transition-all`}/>
                                 <figure className='w-full aspect-square overflow-hidden rounded-md relative'>
-                                    <Image src="/profile.png" alt="Portrait" layout="fill" className='grayscale hover:grayscale-0 transition-all'/>
+                                    <Image src="https://i.imgur.com/5bMfR6g.jpg" alt="Portrait" layout="fill" className='grayscale hover:grayscale-0 transition-all'/>
                                 </figure>
                             </div>
                         </motion.div>
