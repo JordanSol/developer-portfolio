@@ -29,7 +29,10 @@ module.exports = {
     },
     variants: {
       animation: ["motion-safe"]
-    }
+    },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: false
+  }
 }
