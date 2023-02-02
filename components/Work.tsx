@@ -13,7 +13,7 @@ import { AnimatePresence, motion, useInView } from 'framer-motion';
 
 const Work = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref);
+    const isInView = useInView(ref, {once: true, margin: '-100px'});
     return (
         <section className='w-full h-full min-h-screen flex flex-col justify-center py-20 px-4 main-content' ref={ref}>
             <AnimatePresence>
@@ -33,7 +33,7 @@ const Work = () => {
                             y: -100
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: .8
                         }}>
@@ -53,7 +53,7 @@ const Work = () => {
                             x: -200
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: 1
                         }}>
@@ -137,7 +137,7 @@ const Work = () => {
                             x: 200
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: 1.2
                         }}>
@@ -240,7 +240,7 @@ const Work = () => {
                             x: -200
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: 1.4
                         }}>

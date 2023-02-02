@@ -11,7 +11,7 @@ const About:FC = () => {
     const [imageHovered, setImageHovered] = useState(false);
     const [showContent, setShowContent] = useState(false);
     const containerRef = useRef<HTMLDivElement | null>(null);
-    const isInView= useInView(containerRef, {margin: "-100px "})
+    const isInView= useInView(containerRef, {margin: "-100px ", once: true})
 
     return (
         <div className="w-full h-min min-h-screen relative flex flex-col justify-center py-20 px-4 main-content" ref={containerRef}>
@@ -32,7 +32,7 @@ const About:FC = () => {
                         x: -100
                     }}
                     transition={{
-                        duration: 0.4,
+                        duration: 0.6,
                         type: 'spring',
                         delay: .8
                     }}
@@ -54,7 +54,7 @@ const About:FC = () => {
                             x: -100,
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: .8
                         }}>
@@ -119,7 +119,7 @@ const About:FC = () => {
                             x: 100,
                         }}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.6,
                             type: 'spring',
                             delay: 1
                         }}>

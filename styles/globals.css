@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @layer base {
   .main-content {
-    @apply max-w-[1280px] mx-auto !px-10;
+    @apply max-w-[1280px] mx-auto !px-10 py-20;
   }
 }
 

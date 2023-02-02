@@ -3,7 +3,7 @@ import Image from 'next/image'
 import {useInView, motion} from 'framer-motion'
 const Skills = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref);
+    const isInView = useInView(ref, {once: true, margin: '-100px'});
     return (
         <section className={`motion-safe:animate-fadeIn w-full  py-20 px-4 flex flex-col justify-center items-center h-full main-content js-show-on-scroll`} ref={ref}>
             {isInView && (
@@ -21,7 +21,7 @@ const Skills = () => {
                     y: 200
                 }}
                 transition={{
-                    duration: 0.4,
+                    duration: 0.6,
                     type: 'spring',
                     delay: .8
                 }}>
