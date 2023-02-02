@@ -4,7 +4,7 @@ import Nav from './Nav'
 import Tags from './Tags'
 import NoSsr from './no-ssr'
 
-import Link from 'next/link'
+import {Link} from 'react-scroll'
 
 export default function Hero () {
     return (
@@ -26,7 +26,7 @@ export default function Hero () {
                     </div>                   
                 </div> 
             </div>  
-            <Link href="/" className="z-24 cursor-pointer" >
+            <Link to="about" smooth={true} className="z-24 cursor-pointer" >
                 <div className='scroll-down cursor-pointer'></div>
             </Link>
 
