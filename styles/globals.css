@@ -18,22 +18,23 @@ a {
   text-decoration: none;
 }
 
-p {
-  @apply text-slate-300
-}
+
 
 * {
   box-sizing: border-box;
-  color: whitesmoke;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: acier-bat-solid;
+  color: whitesmoke;
 }
 
 @layer base {
   .main-content {
     @apply max-w-[1280px] mx-auto !px-10 !py-36;
+  }
+  p {
+    @apply text-slate-300
   }
 }
 
@@ -52,6 +53,40 @@ h1,h2,h3,h4,h5,h6 {
   height: 8px;
   border-radius: 1px;
   background-color: #2E78C7;
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  z-index: -1;
+}
+
+.underline-heading-wp {
+  position: relative;
+  z-index: 5; 
+}
+
+.underline-heading-wp::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  border-radius: 1px;
+  background-color: #096484;
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  z-index: -1;
+}
+
+.underline-heading-figma {
+  position: relative;
+  z-index: 5; 
+}
+
+.underline-heading-figma::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  border-radius: 1px;
+  background-color: #A669F7;
   position: absolute;
   bottom: 3px;
   left: 4px;

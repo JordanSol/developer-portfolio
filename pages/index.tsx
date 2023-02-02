@@ -7,6 +7,8 @@ import Nav from '../components/Nav'
 import Skills from '../components/Skills'
 import Work from "../components/Work"
 import About from '../components/About'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
 
 const Home: NextPage = () => {
 
@@ -16,6 +18,8 @@ const Home: NextPage = () => {
         <About/>
         <Skills/>
         <Work/>
+        <Projects/>
+        <Contact/>
       </div>
   )
 }
