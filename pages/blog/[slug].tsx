@@ -23,24 +23,26 @@ const Post: NextPage<{post: any}> = ({post}) => {
       )
     }
     return (
-        <div className='pt-20 px-4 max-w-screen-lg mx-auto'>
-          <h1 className='my-6 text-3xl md:text-4xl text-center text-yellow-300'>{post?.title}</h1>
-          <div className='w-full flex justify-center'>
-            <div className='rounded-md overflow-hidden w-full sm:w-1/2'>
-              <Image src={urlFor(post?.coverImage).width(640).url()} width={640} height={360} layout="responsive" alt="Blog Image"/>
+        <div className='py-20 px-4 max-w-screen-lg mx-auto flex justify-center'>
+          <div className='max-w-screen-md px-10 py-8 rounded-md bg-slate-800 border border-gray-300/20'>
+            <h1 className='my-6 text-3xl md:text-4xl text-center text-yellow-300'>{post?.title}</h1>
+            <div className='w-full flex justify-center'>
+              <div className='rounded-md overflow-hidden w-full sm:w-3/4 border border-gray-300'>
+                <Image src={urlFor(post?.coverImage).width(640).url()} width={640} height={360} layout="responsive" alt="Blog Image"/>
+              </div>
             </div>
+            <div className='flex justify-center'>
+              {/* <figure className='avatar rounded-full border-2 border-yellow-300 overflow-hidden'>
+                <Image src={urlFor(post?.author.picture).width(50).url()} width={50} height={50} alt="Author image" />
+              </figure> */}
+            </div>
+            <br/>
+              <PortableText content={post?.content} serializers={{
+                h3: (props: any) => <h3 className='text-xl md:text-2xl text-slate-200' {...props} />,
+                normal: (props: any) => <p className='mb-6' {...props} />,
+                link: (props: any) => <a target='_blank' rel='noopener noreferrer' className='link' {...props} /> 
+              }} />
           </div>
-          <div className='flex justify-center'>
-            {/* <figure className='avatar rounded-full border-2 border-yellow-300 overflow-hidden'>
-              <Image src={urlFor(post?.author.picture).width(50).url()} width={50} height={50} alt="Author image" />
-            </figure> */}
-          </div>
-          <br/>
-            <PortableText content={post?.content} serializers={{
-              h3: (props: any) => <h3 className='text-xl md:text-2xl text-yellow-300' {...props} />,
-              normal: (props: any) => <p className='mb-6' {...props} />,
-              link: (props: any) => <a target='_blank' rel='noopener noreferrer' className='link' {...props} /> 
-            }} />
         </div>
     )
 }
