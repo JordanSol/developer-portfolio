@@ -162,6 +162,15 @@ const Work = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide style={{overflowY: "visible"}}>
+                                            <div className='p-3 mb-7'>
+                                                <div className="border-2 border-white/20 overflow-hidden rounded-md shadow-md hover:shadow-white/30 hover:-translate-y-1 transition-all shadow-white/20">
+                                                    <a href="https://thetricityeyes.com/" target="_blank" rel="noopener noreferrer">
+                                                        <Image  src="https://i.imgur.com/yJGbq3M.png" width={1493} height={968} alt="Tri-City Eyes Preview" layout='responsive' />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                        <SwiperSlide style={{overflowY: "visible"}}>
                                             <div className='p-3'>
                                                 <div className="border-2 border-white/20 overflow-hidden rounded-md shadow-md hover:shadow-white/30 hover:-translate-y-1 transition-all shadow-white/20">
                                                     <a href="https://www.concretecoatingsrr.com" target="_blank" rel="noopener noreferrer">
