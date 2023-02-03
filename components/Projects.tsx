@@ -67,7 +67,7 @@ const Projects = () => {
                                             Ultimate Ladder
                                         </h4>
                                         <h5 className='text-blue-100/80 subHeading'>
-                                            {"//"} Open-Source Smash Bros Ranked System
+                                            {"//"} Open-Source Smash Bros Ranked Platform
                                         </h5>
                                         <div className='flex gap-4 items-center'>
                                             <Tags text="p"/>
