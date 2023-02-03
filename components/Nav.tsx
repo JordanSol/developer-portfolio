@@ -30,7 +30,7 @@ const Nav: FC = () => {
 
 
     return (
-            <div className={`flex justify-between items-center gap-4 p-4 z-[99] fixed top-0 left-0 w-full transition-all ease-out duration-200 ${color && "bg-[#08060a]/90 backdrop-blur-md"} text-slate-300`}>
+            <div className={`flex justify-between items-center lg:grid lg:grid-cols-3 gap-4 p-4 z-[99] fixed top-0 left-0 w-full transition-all ease-out duration-200 ${color && "bg-[#08060a]/90 backdrop-blur-md"} text-slate-300`}>
                 <Link scroll={true} href="/#hero" className='cursor-pointer'>
                     <button className='btn btn-ghost btn-square'>
                         <Image width={35} height={35} src="/logo.svg" alt="Jordan Freeman Developer Logo"/>
@@ -93,7 +93,7 @@ const Nav: FC = () => {
                         )}
                     </li>
                 </ul>
-                <div className="gap-2 h-full items-center justify-center text-xl hidden md:flex">
+                <div className="gap-2 h-full items-center justify-center text-xl hidden md:flex md:justify-end">
                     <a href="https://www.linkedin.com/in/jordan-freeman-36417a218/" target="_blank" rel='noopener noreferrer' >
                         <AiFillLinkedin className="text-2xl cursor-pointer hover:scale-105 hover:text-yellow-300"/>
                     </a>
