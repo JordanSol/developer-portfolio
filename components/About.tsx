@@ -76,8 +76,7 @@ const About:FC = () => {
                                                 Hydra Launchpad.
                                             </a>
                                             {" "}
-                                            My main focus here is to architect, project-manage, and lead the development of our top-priority product, ArenaX, an online money-match platform for the most popular e-sports,
-                                            allowing competitive teams to practice their gameplay with stakes.
+                                            My main focus here is to architect, project-manage, and lead the development of our top-priority product which will be announced soon.
                                         </p>
                                     
                                     <br/>

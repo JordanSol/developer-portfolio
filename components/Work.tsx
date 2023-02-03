@@ -71,7 +71,7 @@ const Work = () => {
                                         <p>
                                             Hydra Launchpad is a Web3 DevShop creating cutting-edge technology on the Solana blockchain while providing developer work to Web3 projects. 
                                             At Hydra, I&apos;ve spearheaded the development of multiple products for clients, bringing in over $100,000 in revenue.<br/><br/>
-                                            I am currently projct-managing and leading the development of Hydra&apos;s newest product: ArenaX, an online money-match platform for the most popular E-Sports. 
+                                            I am currently projct-managing and leading the development of Hydra&apos;s newest product.
                                             My duties include managing a team of Frontend and Backend developers, architecting the core systems of the app {"(payment system, backend, frontend, Discord bot, database, WebSocket servers)"}, 
                                             reviewing all code, and building the API. More info will be available soon.
                                         </p>
