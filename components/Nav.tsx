@@ -102,12 +102,12 @@ const Nav: FC = () => {
                     </a>
                     {router.route !== "/" ? (
                             <Link href="/#contact">
-                                <span className='btn btn-sm btn-outline btn-primary-content'>
+                                <span className='btn btn-sm btn-outline btn-primary-content border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900'>
                                     CONTACT
                                 </span>
                             </Link>
                         ) : (
-                            <Anchor to="contact" smooth={true} className='btn btn-sm btn-outline btn-primary-content'>
+                            <Anchor to="contact" smooth={true} className='btn btn-sm btn-outline btn-primary-content border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900'>
                                 CONTACT
                             </Anchor>
                         )}

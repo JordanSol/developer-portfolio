@@ -104,12 +104,12 @@ const MobileMenu: FC<{toggle: Dispatch<React.SetStateAction<boolean>>, show: boo
                     </a>
                     {router.route !== "/" ? (
                         <Link href="/#contact" onClick={() => toggle(false)}>
-                            <span className='btn btn-sm btn-outline btn-primary-content'>
+                            <span className='btn btn-sm btn-outline btn-primary-content border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900'>
                                 CONTACT
                             </span>
                         </Link>
                     ) : (
-                        <Anchor to="contact" smooth={true} className='btn btn-sm btn-outline btn-primary-content' onClick={() => toggle(false)}>
+                        <Anchor to="contact" smooth={true} className='btn btn-sm btn-outline btn-primary-content border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900' onClick={() => toggle(false)}>
                             CONTACT
                         </Anchor>
                     )}
