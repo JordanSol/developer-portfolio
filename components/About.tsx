@@ -71,7 +71,7 @@ const About:FC = () => {
                                         </p>
                                         <br/>
                                         <p>
-                                            Nowadays I have the priviledge of building full-stack applications for thousands of people to enjoy, with the help of my team at{" "}
+                                            Nowadays I have the privilege of building full-stack applications for thousands of people to enjoy, with the help of my team at{" "}
                                             <a className='link' href="https://hydralaunchpad.com/" target="_blank" rel="noopener noreferrer">
                                                 Hydra Launchpad.
                                             </a>

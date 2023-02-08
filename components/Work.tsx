@@ -71,7 +71,7 @@ const Work = () => {
                                         <p>
                                             Hydra Launchpad is a Web3 DevShop creating cutting-edge technology on the Solana blockchain while providing developer work to Web3 projects. 
                                             At Hydra, I&apos;ve spearheaded the development of multiple products for clients, bringing in over $100,000 in revenue.<br/><br/>
-                                            I am currently projct-managing and leading the development of Hydra&apos;s newest product.
+                                            I am currently project-managing and leading the development of Hydra&apos;s newest product.
                                             My duties include managing a team of Frontend and Backend developers, architecting the core systems of the app {"(payment system, backend, frontend, Discord bot, database, WebSocket servers)"}, 
                                             reviewing all code, and building the API. More info will be available soon.
                                         </p>
@@ -228,7 +228,7 @@ const Work = () => {
                                         <Tags text="p"/>
                                         <p>
                                             Spotted Fox Digital Marketing is a local digital marketing agency providing a full-suite of digital marketing products to local businesses.
-                                            At Spotted Fox, I designed and built beautiful websites for clients, prioratizing effective visual storytelling and strong SEO. Here, I prototyped designs in{" "}
+                                            At Spotted Fox, I designed and built beautiful websites for clients, prioritizing effective visual storytelling and strong SEO. Here, I prototyped designs in{" "}
                                             <a href="https://figma.com/" target="_blank" rel="noopener noreferrer" className='link hover:text-yellow-300 transition-colors'>Figma,</a>{" "}
                                             then built out those designs in Wordpress.<br/><br/>
                                             Often times, clients needed custom solutions for various problems, where I got the opportunity to use my JavaScript skills.
