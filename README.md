@@ -2,6 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Hey there, this is the code behind my portfolio!
 
-I'm glad to see you dropping by to peek at the code, this will be an every-evolving repository, so much is subject to change as I move elements from hard-coded to Sanity.io.
+I'm glad to see you dropping by to peek at the code, this will be an ever-evolving repository, so much is subject to change as I move elements from hard-coded to Sanity.io.
 
-This portfolio is a NextJs app written in typescript, styled with TailwindCSS and DaisyUi.
+This portfolio is a NextJs app written in TypeScript, styled with TailwindCSS and DaisyUi.
